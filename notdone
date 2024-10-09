@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    const MaterialApp(
+      home: Scaffold(
+        body: Center(
+        ),
+      ),
+    ),
+  );
+}
+
+
+class  StatelessWidget {
+ void _increment() { 
+
+ }
+
+  @override
+  Widget build(BuildContext context) {
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text('Press me'),
+        SizedBox(height: 20),
+        ElevatedButton(
+          onPressed: ()
+          {
+            print('Button pressed');
+          },
+          child: const Text('Increment'),
+        ),
+        const SizedBox(width: 16),
+        Text('Count: $_increment'),
+      ],
+    );
+  }
+}
+
